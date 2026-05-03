@@ -7,60 +7,45 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
-        body { font-family: 'Arial', sans-serif; }
-        .hero { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)), url('https://picsum.photos/id/1015/1920/1080') center/cover; }
+        .hero { background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)), url('https://picsum.photos/id/1015/1920/1080') center/cover no-repeat; }
     </style>
 </head>
-<body class="bg-zinc-950 text-white">
+<body class="bg-zinc-950 text-white overflow-x-hidden">
 
     <!-- NAV -->
-    <nav class="bg-black/80 backdrop-blur-md fixed w-full z-50 border-b border-yellow-600">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="flex items-center gap-3">
-                <span class="text-3xl font-bold tracking-widest text-yellow-400">A</span>
-                <div>
-                    <p class="text-xl font-bold">AURORA</p>
-                    <p class="text-xs text-zinc-400 -mt-1">AUTOH AUS</p>
-                </div>
+    <nav class="bg-black/90 backdrop-blur fixed w-full z-50 border-b border-yellow-500/30">
+        <div class="max-w-7xl mx-auto px-8 py-5 flex justify-between items-center">
+            <img src="https://i.imgur.com/DEINELOGOURL.png" alt="Aurora Logo" class="h-12"> <!-- Hier später echtes Logo -->
+            <div class="flex gap-8 text-sm uppercase tracking-widest font-medium">
+                <a href="#" class="hover:text-yellow-400 transition">Startseite</a>
+                <a href="#" class="hover:text-yellow-400 transition">Über uns</a>
+                <a href="#" class="hover:text-yellow-400 transition">Fahrzeuge</a>
+                <a href="#" class="hover:text-yellow-400 transition">Vorbestellung</a>
+                <a href="#" class="hover:text-yellow-400 transition">Termine</a>
+                <a href="#" class="hover:text-yellow-400 transition">Kontakt</a>
             </div>
-            <div class="flex gap-8 text-sm uppercase tracking-widest">
-                <a href="#" class="hover:text-yellow-400">Startseite</a>
-                <a href="#" class="hover:text-yellow-400">Über uns</a>
-                <a href="#" class="hover:text-yellow-400">Fahrzeuge</a>
-                <a href="#" class="hover:text-yellow-400">Termine</a>
-                <a href="#" class="hover:text-yellow-400">Kontakt</a>
-            </div>
-            <a href="#" class="bg-yellow-400 text-black px-6 py-2 text-sm font-bold tracking-widest hover:bg-yellow-300">SHOWROOM</a>
+            <button class="bg-yellow-400 hover:bg-yellow-300 text-black px-8 py-3 text-sm font-bold tracking-widest transition">SHOWROOM</button>
         </div>
     </nav>
 
     <!-- HERO -->
-    <section class="hero h-screen flex items-center pt-20">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="max-w-2xl">
-                <p class="text-yellow-400 text-sm tracking-widest mb-2">OSNABRÜCK ROLEPLAY</p>
-                <h1 class="text-7xl font-bold leading-none mb-4">WILLKOMMEN BEI<br><span class="text-yellow-400">AURORA</span></h1>
-                <p class="text-2xl mb-8">Exklusivität. Qualität. Vertrauen.</p>
-                <p class="text-zinc-300 mb-10">Das Aurora Autohaus steht für höchste Qualität, exklusive Fahrzeuge und erstklassigen Service.</p>
-                <a href="#" class="inline-block bg-yellow-400 text-black px-10 py-4 text-lg font-bold tracking-widest hover:bg-yellow-300">ZU UNSEREN FAHRZEUGEN →</a>
+    <section class="hero min-h-screen flex items-center pt-20">
+        <div class="max-w-7xl mx-auto px-8 grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <p class="text-yellow-400 tracking-[4px] text-sm mb-3">OSNABRÜCK ROLEPLAY</p>
+                <h1 class="text-7xl md:text-8xl font-black leading-none mb-6">AURORA<br>AUTOH AUS</h1>
+                <p class="text-2xl text-yellow-400 mb-4">EXKLUSIVITÄT | QUALITÄT | VERTRAUEN</p>
+                <p class="text-lg text-zinc-300 max-w-md">Das Aurora Autohaus steht für höchste Qualität, exklusive Fahrzeuge und erstklassigen Service.</p>
+                <button class="mt-10 border border-yellow-400 text-yellow-400 px-10 py-4 hover:bg-yellow-400 hover:text-black font-bold tracking-widest transition">ZU UNSEREN FAHRZEUGEN →</button>
+            </div>
+            <div class="hidden md:block">
+                <!-- Großes Auto Bild kommt hier später besser -->
             </div>
         </div>
     </section>
 
-    <!-- FEATURES -->
-    <section class="py-20 bg-zinc-900">
-        <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-6">
-            <div class="bg-zinc-800 p-8 text-center rounded-xl border border-yellow-900/50">
-                <i class="fa-solid fa-gem text-4xl text-yellow-400 mb-4"></i>
-                <h3 class="font-bold mb-2">EXKLUSIVE FAHRZEUGE</h3>
-                <p class="text-sm text-zinc-400">Nur die besten Marken und Modelle</p>
-            </div>
-            <!-- Weitere 3 Cards kannst du später ergänzen -->
-        </div>
-    </section>
-
-    <footer class="bg-black py-12 text-center text-sm text-zinc-500">
-        © 2026 Aurora Autohaus - Osnabrück Roleplay
+    <footer class="py-12 text-center text-zinc-500 text-sm border-t border-zinc-800">
+        © 2026 Aurora Autohaus • Osnabrück Roleplay
     </footer>
 </body>
 </html>
