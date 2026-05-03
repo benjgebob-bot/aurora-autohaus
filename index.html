@@ -6,47 +6,45 @@
     <title>Aurora Autohaus</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        .hero {
-            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.85)), url('https://picsum.photos/id/1015/1920/1080') center/cover;
-        }
+        .hero { background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.85)), url('https://picsum.photos/id/1074/1920/1080') center/cover; }
     </style>
 </head>
 <body class="bg-zinc-950 text-white">
 
     <!-- NAV -->
-    <nav class="bg-black border-b border-yellow-500/30 fixed w-full z-50">
+    <nav class="bg-black border-b border-amber-500/30 fixed w-full z-50">
         <div class="max-w-7xl mx-auto px-8 py-5 flex items-center justify-between">
             <div class="flex items-center gap-3">
-                <span class="text-5xl font-black text-yellow-400">A</span>
+                <span class="text-6xl font-black text-amber-400">A</span>
                 <div>
-                    <p class="text-3xl font-bold tracking-widest text-yellow-400">AURORA</p>
-                    <p class="text-sm -mt-1">AUTOH AUS</p>
+                    <p class="text-4xl font-bold tracking-widest">AURORA</p>
+                    <p class="text-amber-400 text-sm -mt-2">AUTOH AUS</p>
                 </div>
             </div>
-            <div class="flex gap-8 uppercase text-sm tracking-widest">
-                <a href="#" class="hover:text-yellow-400">Startseite</a>
-                <a href="#" class="hover:text-yellow-400">Über uns</a>
-                <a href="#" class="hover:text-yellow-400">Fahrzeuge</a>
-                <a href="#" class="hover:text-yellow-400">Vorbestellung</a>
-                <a href="#" class="hover:text-yellow-400">Termine</a>
-                <a href="#" class="hover:text-yellow-400">Kontakt</a>
+            <div class="flex gap-8 uppercase text-sm font-medium tracking-wider">
+                <a href="#" class="hover:text-amber-400">Startseite</a>
+                <a href="#" class="hover:text-amber-400">Über uns</a>
+                <a href="#" class="hover:text-amber-400">Fahrzeuge</a>
+                <a href="#" class="hover:text-amber-400">Vorbestellung</a>
+                <a href="#" class="hover:text-amber-400">Termine</a>
+                <a href="#" class="hover:text-amber-400">Kontakt</a>
             </div>
-            <button class="bg-yellow-400 text-black px-8 py-3 font-bold hover:bg-amber-300">SHOWROOM</button>
+            <button class="bg-amber-400 text-black px-8 py-3 font-bold hover:bg-amber-300">SHOWROOM</button>
         </div>
     </nav>
 
     <!-- HERO -->
-    <section class="hero min-h-screen flex items-center pt-20">
-        <div class="max-w-7xl mx-auto px-8 grid md:grid-cols-2 gap-12 items-center">
-            <div>
-                <p class="text-yellow-400 tracking-widest text-sm mb-4">WILLKOMMEN BEI</p>
-                <h1 class="text-7xl font-black leading-none">AURORA<br>AUTOH AUS</h1>
-                <p class="mt-6 text-xl">Exklusivität | Qualität | Vertrauen</p>
-                <p class="mt-8 text-zinc-300 max-w-md">Das Aurora Autohaus steht für höchste Qualität, exklusive Fahrzeuge und erstklassigen Service.</p>
-                <button class="mt-12 bg-yellow-400 text-black px-12 py-5 font-bold hover:bg-amber-300">ZU UNSEREN FAHRZEUGEN →</button>
+    <section class="hero min-h-screen flex items-center">
+        <div class="max-w-7xl mx-auto px-8 grid md:grid-cols-2 gap-12">
+            <div class="pt-20">
+                <p class="text-amber-400 uppercase tracking-widest mb-4">Willkommen bei</p>
+                <h1 class="text-7xl font-black tracking-tighter">AURORA<br>AUTOH AUS</h1>
+                <p class="text-2xl text-amber-400 mt-4">Exklusivität | Qualität | Vertrauen</p>
+                <p class="mt-8 max-w-md">Das Aurora Autohaus steht für höchste Qualität, exklusive Fahrzeuge und erstklassigen Service.</p>
+                <button class="mt-12 border-2 border-amber-400 px-12 py-5 text-lg font-bold hover:bg-amber-400 hover:text-black">ZU UNSEREN FAHRZEUGEN →</button>
             </div>
-            <div class="hidden md:block">
-                <img src="https://picsum.photos/id/1074/900/550" alt="Luxus Auto" class="rounded-2xl shadow-2xl border border-yellow-500/30">
+            <div class="hidden md:flex justify-end items-center">
+                <img src="https://picsum.photos/id/1074/800/500" alt="Luxus Auto" class="rounded-2xl shadow-2xl">
             </div>
         </div>
     </section>
