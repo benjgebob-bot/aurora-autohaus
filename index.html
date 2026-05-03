@@ -5,43 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aurora Autohaus</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <style>
         .hero {
-            background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)), url('https://picsum.photos/id/1074/1920/1080') center/cover;
+            background: linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.6)), url('https://picsum.photos/id/1074/2000/1200') right/cover;
             min-height: 100vh;
         }
-        .logo-font { font-family: 'Playfair Display', serif; }
     </style>
 </head>
-<body class="bg-black text-white">
+<body class="bg-black text-white font-sans">
 
-    <nav class="fixed top-0 w-full bg-black/80 backdrop-blur z-50 border-b border-yellow-500/20">
-        <div class="max-w-7xl mx-auto flex justify-between items-center px-8 py-6">
-            <div class="flex items-center gap-4">
-                <div class="text-5xl font-black logo-font tracking-tighter text-white">A</div>
-                <div>
-                    <p class="text-3xl font-bold tracking-widest logo-font">AURORA</p>
-                    <p class="text-xs text-yellow-400 -mt-2 tracking-[3px]">AUTOH AUS</p>
+    <!-- NAV -->
+    <nav class="fixed w-full bg-black/95 border-b border-yellow-500/30 z-50">
+        <div class="max-w-7xl mx-auto px-8 py-6 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <span class="text-4xl font-black text-yellow-400">A</span>
+                <div class="leading-none">
+                    <p class="text-3xl font-bold tracking-wider">AURORA</p>
+                    <p class="text-sm text-yellow-400 tracking-widest -mt-1">AUTOH AUS</p>
                 </div>
             </div>
-            <div class="flex gap-10 text-sm uppercase tracking-widest">
+            <div class="flex gap-8 uppercase text-sm tracking-widest">
                 <a href="#" class="hover:text-yellow-400">Startseite</a>
                 <a href="#" class="hover:text-yellow-400">Über uns</a>
                 <a href="#" class="hover:text-yellow-400">Fahrzeuge</a>
+                <a href="#" class="hover:text-yellow-400">Vorbestellung</a>
                 <a href="#" class="hover:text-yellow-400">Termine</a>
                 <a href="#" class="hover:text-yellow-400">Kontakt</a>
             </div>
-            <button class="border border-yellow-400 px-8 py-3 text-sm font-semibold hover:bg-yellow-400 hover:text-black transition">SHOWROOM</button>
+            <button class="bg-yellow-400 text-black px-8 py-3 text-sm font-bold hover:bg-amber-300">SHOWROOM</button>
         </div>
     </nav>
 
+    <!-- HERO -->
     <section class="hero flex items-center">
-        <div class="max-w-5xl mx-auto px-8 text-center">
-            <p class="text-yellow-400 text-sm tracking-[4px] mb-4">OSNABRÜCK ROLEPLAY</p>
-            <h1 class="text-8xl md:text-[110px] font-black logo-font tracking-tighter leading-none mb-6">AURORA<br>AUTOH AUS</h1>
-            <p class="text-2xl text-zinc-300 max-w-2xl mx-auto">Exklusivität. Qualität. Vertrauen.</p>
-            <button class="mt-12 border-2 border-yellow-400 text-yellow-400 px-12 py-5 text-lg font-semibold hover:bg-yellow-400 hover:text-black transition-all">ZU UNSEREN FAHRZEUGEN</button>
+        <div class="max-w-7xl mx-auto px-8 grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <p class="uppercase text-yellow-400 text-sm tracking-widest mb-4">Willkommen bei</p>
+                <h1 class="text-7xl font-black tracking-tighter leading-none">AURORA<br>AUTOH AUS</h1>
+                <p class="mt-6 text-xl text-zinc-300">Exklusivität | Qualität | Vertrauen</p>
+                <p class="mt-8 text-zinc-400 max-w-md">Das Aurora Autohaus steht für höchste Qualität, exklusive Fahrzeuge und erstklassigen Service.</p>
+                <button class="mt-12 border-2 border-yellow-400 px-10 py-4 hover:bg-yellow-400 hover:text-black font-bold">ZU UNSEREN FAHRZEUGEN →</button>
+            </div>
+            <div class="hidden md:block text-right">
+                <!-- Hier kommt später das große Auto -->
+                <img src="https://picsum.photos/id/1015/800/500" alt="Luxus Auto" class="rounded shadow-2xl">
+            </div>
         </div>
     </section>
 
