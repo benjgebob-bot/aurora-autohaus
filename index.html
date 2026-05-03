@@ -3,54 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aurora Autohaus • Osnabrück Roleplay</title>
+    <title>Aurora Autohaus</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
         .hero {
-            background: linear-gradient(rgba(0,0,0,0.92), rgba(0,0,0,0.95)), url('https://picsum.photos/id/1015/1920/1080') center/cover fixed;
+            background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.95)), url('https://picsum.photos/id/1074/1920/1080') center/cover fixed;
             min-height: 100vh;
         }
-        .luxus { font-family: 'Playfair Display', serif; }
-        .gold { color: #e8b923; }
     </style>
 </head>
-<body class="bg-black text-white">
+<body class="bg-zinc-950 text-white font-['Inter']">
 
     <!-- NAV -->
-    <nav class="fixed w-full bg-black border-b border-amber-500/30 z-50">
-        <div class="max-w-7xl mx-auto px-8 py-6 flex items-center justify-between">
-            <div class="flex items-center gap-4">
-                <span class="text-5xl font-black gold">A</span>
-                <div>
-                    <p class="text-4xl font-bold luxus tracking-wider">AURORA</p>
-                    <p class="text-amber-400 text-sm -mt-1">AUTOHAUS</p>
-                </div>
+    <nav class="fixed w-full bg-black/90 backdrop-blur border-b border-zinc-800 z-50">
+        <div class="max-w-7xl mx-auto px-8 py-5 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <span class="text-4xl font-black text-amber-400">A</span>
+                <div class="text-xl font-semibold tracking-wider">AURORA AUTOHAUS</div>
             </div>
-            <div class="flex gap-8 text-sm uppercase tracking-widest">
-                <a href="#" class="hover:gold">Startseite</a>
-                <a href="#" class="hover:gold">Über uns</a>
-                <a href="#" class="hover:gold">Fahrzeuge</a>
-                <a href="#" class="hover:gold">Vorbestellung</a>
-                <a href="#" class="hover:gold">Termine</a>
-                <a href="#" class="hover:gold">Kontakt</a>
+            <div class="flex gap-8 text-sm font-medium">
+                <a href="#" class="hover:text-amber-400">Startseite</a>
+                <a href="#" class="hover:text-amber-400">Fahrzeuge</a>
+                <a href="#" class="hover:text-amber-400">Termine</a>
+                <a href="#" class="hover:text-amber-400">Kontakt</a>
             </div>
-            <button class="bg-amber-400 text-black px-8 py-3 font-bold hover:bg-amber-300 transition">SHOWROOM</button>
+            <button class="bg-amber-400 text-black px-8 py-2.5 text-sm font-semibold hover:bg-amber-300">SHOWROOM</button>
         </div>
     </nav>
 
     <!-- HERO -->
     <section class="hero flex items-center">
-        <div class="max-w-7xl mx-auto px-8 grid md:grid-cols-2 gap-16 items-center">
+        <div class="max-w-7xl mx-auto px-8 grid md:grid-cols-2 gap-12 items-center">
             <div>
-                <p class="text-amber-400 uppercase tracking-widest text-sm mb-4">Willkommen bei</p>
-                <h1 class="text-7xl md:text-8xl font-black luxus leading-none gold">AURORA<br>AUTOHAUS</h1>
-                <p class="mt-6 text-2xl text-amber-400">Exklusivität • Qualität • Vertrauen</p>
-                <p class="mt-8 text-zinc-300 max-w-md">Das Aurora Autohaus steht für höchste Qualität, exklusive Fahrzeuge und erstklassigen Service.</p>
-                <button class="mt-12 border-2 border-amber-400 text-amber-400 px-12 py-5 text-lg font-bold hover:bg-amber-400 hover:text-black transition">ZU UNSEREN FAHRZEUGEN →</button>
+                <p class="text-amber-400 text-sm tracking-widest">WILLKOMMEN BEI</p>
+                <h1 class="text-7xl font-black tracking-tighter leading-none mt-2">AURORA AUTOHAUS</h1>
+                <p class="mt-8 text-zinc-400">Exklusive Fahrzeuge • Erstklassiger Service • Osnabrück Roleplay</p>
+                <button class="mt-12 bg-amber-400 text-black px-10 py-4 font-semibold hover:bg-amber-300">ZUM SHOWROOM</button>
             </div>
             <div class="hidden md:block">
-                <img src="https://picsum.photos/id/1015/850/520" class="rounded-2xl shadow-2xl border border-amber-500/30" alt="Luxusfahrzeug">
+                <img src="https://picsum.photos/id/1074/900/550" class="rounded-xl shadow-2xl" alt="Luxuswagen">
             </div>
         </div>
     </section>
