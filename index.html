@@ -11,30 +11,33 @@
             background: linear-gradient(rgba(0,0,0,0.88), rgba(0,0,0,0.92)), url('https://picsum.photos/id/1074/1920/1080') center/cover fixed;
             min-height: 100vh;
         }
+        .topbar {
+            border-radius: 9999px;
+            margin: 12px auto 0;
+            max-width: 1280px;
+        }
     </style>
 </head>
 <body class="bg-zinc-950 text-white">
 
-    <!-- TOP BAR -->
-    <nav class="bg-zinc-900/95 backdrop-blur border-b border-zinc-700 fixed w-full z-50">
-        <div class="max-w-7xl mx-auto px-8 py-4 flex items-center justify-between">
+    <!-- ABGERUNDETE TOP BAR -->
+    <nav class="bg-zinc-900/95 backdrop-blur border border-zinc-700 fixed w-full z-50 topbar">
+        <div class="max-w-7xl mx-auto px-8 py-5 flex items-center justify-between">
             <div class="flex items-center gap-10">
                 <div class="flex items-center gap-3">
                     <span class="text-4xl font-black text-amber-400">A</span>
                     <div class="text-xl font-semibold tracking-wider">AURORA AUTOH AUS</div>
                 </div>
                 <div class="flex gap-8 text-sm font-medium">
-                    <a href="#" class="hover:text-amber-400">Home</a>
-                    <a href="#" class="hover:text-amber-400">Fahrzeuge</a>
-                    <a href="#" class="hover:text-amber-400">Termine</a>
-                    <a href="#" class="hover:text-amber-400">Discord</a>
+                    <a href="#" class="hover:text-amber-400 transition">Home</a>
+                    <a href="#" class="hover:text-amber-400 transition">Fahrzeuge</a>
+                    <a href="#" class="hover:text-amber-400 transition">Termine</a>
+                    <a href="#" class="hover:text-amber-400 transition">Discord</a>
                 </div>
             </div>
-            <div class="flex items-center gap-6">
-                <button onclick="window.location.href='https://discord.com'" class="bg-[#5865F2] hover:bg-[#4752C4] text-white px-6 py-2 rounded-full font-semibold flex items-center gap-2">
-                    LOGIN WITH DISCORD
-                </button>
-            </div>
+            <button onclick="window.location.href='https://discord.com'" class="bg-[#5865F2] hover:bg-[#4752C4] text-white px-6 py-2.5 rounded-full font-semibold flex items-center gap-2 transition">
+                LOGIN WITH DISCORD
+            </button>
         </div>
     </nav>
 
@@ -46,10 +49,10 @@
                 <h1 class="text-7xl font-black tracking-tighter">AURORA AUTOH AUS</h1>
                 <p class="text-2xl text-amber-400 mt-6">EXKLUSIVITÄT • QUALITÄT • VERTRAUEN</p>
                 <p class="mt-8 text-zinc-300 max-w-md">Das Aurora Autohaus steht für höchste Qualität, exklusive Fahrzeuge und erstklassigen Service.</p>
-                <button class="mt-12 border border-amber-400 text-amber-400 px-10 py-4 font-bold hover:bg-amber-400 hover:text-black">ZU UNSEREN FAHRZEUGEN →</button>
+                <button class="mt-12 border border-amber-400 text-amber-400 px-10 py-4 font-bold hover:bg-amber-400 hover:text-black transition">ZU UNSEREN FAHRZEUGEN →</button>
             </div>
             <div class="hidden md:block">
-                <img src="https://picsum.photos/id/1074/850/520" class="rounded-2xl shadow-2xl" alt="Luxuswagen">
+                <img src="https://picsum.photos/id/1074/850/520" class="rounded-2xl shadow-2xl border border-amber-500/30" alt="Luxuswagen">
             </div>
         </div>
     </section>
@@ -57,22 +60,22 @@
     <!-- FEATURE CARDS -->
     <section class="py-20 bg-zinc-900">
         <div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-4 gap-6">
-            <div class="bg-zinc-800/50 p-8 rounded-2xl border border-amber-500/20">
+            <div class="bg-zinc-800/70 p-8 rounded-2xl border border-amber-500/20 hover:border-amber-400 transition">
                 <div class="text-4xl mb-4">💎</div>
                 <h3 class="font-bold mb-2">EXKLUSIVE FAHRZEUGE</h3>
                 <p class="text-sm text-zinc-400">Nur die besten Marken und Modelle in unserem Showroom.</p>
             </div>
-            <div class="bg-zinc-800/50 p-8 rounded-2xl border border-amber-500/20">
+            <div class="bg-zinc-800/70 p-8 rounded-2xl border border-amber-500/20 hover:border-amber-400 transition">
                 <div class="text-4xl mb-4">👤</div>
                 <h3 class="font-bold mb-2">PERSÖNLICHER SERVICE</h3>
                 <p class="text-sm text-zinc-400">Deine Zufriedenheit steht bei uns an erster Stelle.</p>
             </div>
-            <div class="bg-zinc-800/50 p-8 rounded-2xl border border-amber-500/20">
+            <div class="bg-zinc-800/70 p-8 rounded-2xl border border-amber-500/20 hover:border-amber-400 transition">
                 <div class="text-4xl mb-4">🛡️</div>
                 <h3 class="font-bold mb-2">VERTRAUEN & SICHERHEIT</h3>
                 <p class="text-sm text-zinc-400">Transparente Abläufe und sichere Abwicklungen.</p>
             </div>
-            <div class="bg-zinc-800/50 p-8 rounded-2xl border border-amber-500/20">
+            <div class="bg-zinc-800/70 p-8 rounded-2xl border border-amber-500/20 hover:border-amber-400 transition">
                 <div class="text-4xl mb-4">⏱️</div>
                 <h3 class="font-bold mb-2">LEISTUNG & STIL</h3>
                 <p class="text-sm text-zinc-400">Für alle, die mehr erwarten als nur ein Fahrzeug.</p>
