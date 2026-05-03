@@ -7,23 +7,23 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         .hero {
-            background: linear-gradient(rgba(10,10,10,0.85), rgba(10,10,10,0.9)), url('https://picsum.photos/id/1015/1920/1080') center/cover;
-            min-height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.85)), url('https://picsum.photos/id/1015/1920/1080') center/cover;
         }
     </style>
 </head>
 <body class="bg-zinc-950 text-white">
 
-    <nav class="fixed w-full bg-black/95 z-50 border-b border-yellow-500/30">
-        <div class="max-w-7xl mx-auto px-8 py-6 flex items-center justify-between">
+    <!-- NAV -->
+    <nav class="bg-black border-b border-yellow-500/30 fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-8 py-5 flex items-center justify-between">
             <div class="flex items-center gap-3">
                 <span class="text-5xl font-black text-yellow-400">A</span>
-                <div class="leading-none">
-                    <p class="text-3xl font-bold">AURORA</p>
-                    <p class="text-yellow-400 text-sm tracking-widest">AUTOH AUS</p>
+                <div>
+                    <p class="text-3xl font-bold tracking-widest text-yellow-400">AURORA</p>
+                    <p class="text-sm -mt-1">AUTOH AUS</p>
                 </div>
             </div>
-            <div class="flex gap-8 text-sm uppercase">
+            <div class="flex gap-8 uppercase text-sm tracking-widest">
                 <a href="#" class="hover:text-yellow-400">Startseite</a>
                 <a href="#" class="hover:text-yellow-400">Über uns</a>
                 <a href="#" class="hover:text-yellow-400">Fahrzeuge</a>
@@ -35,17 +35,18 @@
         </div>
     </nav>
 
-    <section class="hero flex items-center">
-        <div class="max-w-7xl mx-auto px-8 grid md:grid-cols-2 gap-16 items-center">
+    <!-- HERO -->
+    <section class="hero min-h-screen flex items-center pt-20">
+        <div class="max-w-7xl mx-auto px-8 grid md:grid-cols-2 gap-12 items-center">
             <div>
-                <p class="text-yellow-400 uppercase tracking-widest text-sm mb-3">Willkommen bei</p>
+                <p class="text-yellow-400 tracking-widest text-sm mb-4">WILLKOMMEN BEI</p>
                 <h1 class="text-7xl font-black leading-none">AURORA<br>AUTOH AUS</h1>
-                <p class="text-xl mt-6">Exklusivität | Qualität | Vertrauen</p>
-                <p class="mt-8 text-zinc-300">Das Aurora Autohaus steht für höchste Qualität, exklusive Fahrzeuge und erstklassigen Service.</p>
-                <button class="mt-12 border border-yellow-400 px-12 py-5 hover:bg-yellow-400 hover:text-black font-bold">ZU UNSEREN FAHRZEUGEN →</button>
+                <p class="mt-6 text-xl">Exklusivität | Qualität | Vertrauen</p>
+                <p class="mt-8 text-zinc-300 max-w-md">Das Aurora Autohaus steht für höchste Qualität, exklusive Fahrzeuge und erstklassigen Service.</p>
+                <button class="mt-12 bg-yellow-400 text-black px-12 py-5 font-bold hover:bg-amber-300">ZU UNSEREN FAHRZEUGEN →</button>
             </div>
-            <div>
-                <img src="https://picsum.photos/id/1074/900/550" alt="Luxuswagen" class="rounded-xl shadow-2xl">
+            <div class="hidden md:block">
+                <img src="https://picsum.photos/id/1074/900/550" alt="Luxus Auto" class="rounded-2xl shadow-2xl border border-yellow-500/30">
             </div>
         </div>
     </section>
