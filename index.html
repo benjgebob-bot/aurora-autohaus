@@ -3,9 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aurora Autohaus</title>
+    <title>Aurora Autohaus • Osnabrück Roleplay</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
+        .topbar {
+            border-radius: 9999px;
+            margin: 12px auto 0;
+            max-width: 1280px;
+        }
         .hero {
             background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.95)), url('https://picsum.photos/id/1074/1920/1080') center/cover fixed;
             min-height: 100vh;
@@ -14,7 +19,8 @@
 </head>
 <body class="bg-zinc-950 text-white">
 
-    <nav class="bg-zinc-900/95 backdrop-blur border-b border-zinc-700 fixed w-full z-50">
+    <!-- ABGERUNDETE TOP BAR -->
+    <nav class="bg-zinc-900/95 backdrop-blur border border-zinc-700 fixed w-full z-50 topbar">
         <div class="max-w-7xl mx-auto px-8 py-4 flex items-center justify-between">
             <div class="flex items-center gap-10">
                 <div class="flex items-center gap-3">
@@ -29,13 +35,15 @@
                 </div>
             </div>
             <div class="flex items-center gap-6">
-                <button class="text-sm font-medium hover:text-amber-400">Login</button>
-                <button class="bg-amber-400 text-black px-6 py-2 rounded-full font-semibold hover:bg-amber-300">SHOWROOM</button>
+                <button onclick="window.location.href='https://discord.com'" class="bg-[#5865F2] hover:bg-[#4752C4] text-white px-6 py-2 rounded-full font-semibold flex items-center gap-2">
+                    <i class="fab fa-discord"></i> LOGIN WITH DISCORD
+                </button>
             </div>
         </div>
     </nav>
 
-    <section class="hero flex items-center pt-20">
+    <!-- HERO -->
+    <section class="hero flex items-center pt-24">
         <div class="max-w-7xl mx-auto px-8">
             <h1 class="text-7xl font-black tracking-tighter">AURORA AUTOHAUS</h1>
             <p class="text-amber-400 text-2xl mt-4">Exklusivität • Qualität • Vertrauen</p>
