@@ -1,1 +1,17 @@
+backend:
+  name: github
+  repo: benjgebob-bot/aurora-autohaus
+  branch: main
 
+media_folder: "assets"
+public_folder: "assets"
+
+collections:
+  - name: "general"
+    label: "Allgemein"
+    files:
+      - file: "index.html"
+        label: "Startseite"
+        fields:
+          - {label: "Hero Titel", name: "title", widget: "string"}
+          - {label: "Hero Bild", name: "hero_image", widget: "image"}
